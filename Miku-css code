@@ -1,0 +1,79 @@
+/**
+ * @name Miku Nakano из аниме "Пять невест"
+ * @author M1styX
+ * @description Тема с Мику
+ * @source https://fakecrime.bio/M1styX
+ * Используется фото в формате jpg.
+*/
+
+
+@import url("https://so1ta.github.io/css/usp-base.css");
+
+:root {
+    --background: url("https://i.pinimg.com/1200x/2d/83/3c/2d833c05d2852f7861546eba97fab29f.jpg");
+    --font: "Inter";
+    --transparencyalpha: 0.6;
+    --transparencycolor: 0,0,0;
+    --messagetransparency: 0.1;
+    --guildchanneltransparency: 0.15;
+    --chatinputtransparency: 0.15;
+    --memberlisttransparency: 0.15;
+    --accentcolor: 45, 175, 180, 0.5;
+}
+
+.theme-dark {
+    --text-normal: #ffffff;
+    --text-muted: #b9b9b9;
+    --header-primary: #ffffff;
+    --header-secondary: #cccccc;
+    --channels-default: #a3a3a3;
+    --interactive-normal: #b3b3b3; 
+    --interactive-hover: #ffffff;
+    --interactive-active: #2dafb4;
+
+    /* Выделение при наведении */
+    --background-modifier-hover: rgba(45, 175, 180, 0.2) !important;
+    --background-modifier-active: rgba(45, 175, 180, 0.3) !important;
+    --background-modifier-selected: rgba(45, 175, 180, 0.4) !important;
+    --background-modifier-accent: rgba(45, 175, 180, 0.2) !important;
+    --modifier-hover: rgba(45, 175, 180, 0.2) !important;
+    --modifier-active: rgba(45, 175, 180, 0.3) !important;
+    --modifier-selected: rgba(45, 175, 180, 0.4) !important;
+    --modifier-accent: rgba(45, 175, 180, 0.2) !important;
+
+    /* НАСТРОЙКА ПИНГОВ / УПОМИНАНИЙ */
+    --background-mentioned: rgba(45, 175, 180, 0.12) !important;
+    --info-mention-foreground: rgba(45, 175, 180, 1) !important;
+    --mention-background: rgba(30, 120, 125, 0.4) !important;
+    --mention-foreground: #a6f6f9 !important;  
+
+    /* Кнопки */
+    --brand-experiment: #2dafb4;
+    --brand-experiment-hover: #31c2c7;
+    --brand-experiment-active: #1d8286;
+}
+
+/* Жесткое правило для каналов и участников при наведении */
+[class*="wrapper_"]:hover > [class*="content_"],
+[class*="member_"]:hover,
+[class*="interactive_"]:hover {
+    background-color: rgba(45, 175, 180, 0.2) !important;
+}
+
+/* Бронебойный фикс для полоски пинга и самого текста @упоминания */
+[class*="mentioned_"]::before {
+    background-color: rgb(45, 175, 180) !important; 
+}
+
+/* Цвета для плашки пинга */
+[class*="mention"] {
+    background: rgba(30, 120, 125, 0.45) !important;
+    color: #a6f6f9 !important; 
+    font-weight: 600;
+}
+
+/* Эффект при наведении на плашку пинга */
+[class*="mention"]:hover {
+    background: rgba(45, 175, 180, 0.6) !important;
+    color: #ffffff !important; 
+}
