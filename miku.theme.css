@@ -1,10 +1,9 @@
 /**
- * @name Miku Nakano из аниме "Пять невест"
- * @author M1styX
- * @description Тема с Мику
- * @source https://fakecrime.bio/M1styX
- * Используется фото в формате jpg.
-*/
+ * @name Miku Clear Neon
+ * @description Стилизованная бирюзовая тема в стиле ClearVision с фоном Мику Накано, кастомными эффектами наведения, неоновыми пингами и компактным чатом.
+ * @author M1styx
+ * @version 1.0.5
+ */
 
 @import url("https://so1ta.github.io/css/usp-base.css");
 
@@ -55,8 +54,13 @@
 }
 
 /* ========================================================= */
-/*                   ДОПОЛНИТЕЛЬНЫЕ ПАТЧИ                    */
+/* ДОПОЛНИТЕЛЬНЫЕ ПАТЧИ                                      */
 /* ========================================================= */
+
+/* Скрываем кнопки в верхней панели (звонок, поиск, иконки из image_b9531d.jpg) */
+[class*="toolbar_"] {
+    display: none !important;
+}
 
 /* Жесткое правило для каналов и участников при наведении */
 [class*="wrapper_"]:hover > [class*="content_"],
@@ -85,7 +89,7 @@
 
 /* ПАТЧ: Уменьшение отступа между чатом и полем ввода */
 [class*="scrollerSpacer_"] {
-    height: 10px !important; 
+    height: 10px !important;
 }
 
 [class*="chatContent_"] [class*="form_"] {
@@ -96,4 +100,24 @@
 /* Убирает градиент над строкой ввода, если он есть */
 [class*="form_"]::before {
     display: none !important;
+}
+
+/* ========================================================= */
+/* ВАТЕРМАРКА АВТОРА                                         */
+/* ========================================================= */
+
+#app-mount::after {
+    content: "Theme by M1styx" !important;
+    position: fixed !important;
+    bottom: 15px !important;
+    right: 20px !important; 
+    color: rgba(166, 246, 249, 0.4) !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    font-family: var(--font, "Inter"), sans-serif !important;
+    letter-spacing: 1px !important;
+    text-shadow: 0 0 5px rgba(45, 175, 180, 0.3) !important;
+    z-index: 999999 !important;
+    pointer-events: none !important;
+    display: block !important;
 }
