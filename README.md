@@ -1,5 +1,5 @@
-# Miku-Nakano--turquoise-cyan-
-A sleek, transparent Discord theme for Vencord in cyan/teal colors, inspired by ClearVision and featuring Nakano Miku. Fully customized hover effects and pings.
-<img width="1919" height="1079" alt="Снимок экрана 2026-06-02 030232" src="https://github.com/user-attachments/assets/867b6085-3435-4a2e-8a6d-dd433bd13ffc" />
-<img width="1919" height="1079" alt="Снимок экрана 2026-06-02 031423" src="https://github.com/user-attachments/assets/e64503a7-99fa-4ab8-a224-a51f259df984" />
-The high tab icons is hiden (on screen they are shown and buged out) cuz they are broken
+# TQQ and others themes--vencord-
+A sleek, transparent Discord theme for Vencord
+<img width="1919" height="1079" alt="Снимок экрана 2026-06-06 152724" src="https://github.com/user-attachments/assets/442b4602-ddbe-4672-b1c5-97d07a4e012c" />
+<img width="1919" height="1079" alt="Снимок экрана 2026-06-06 152811" src="https://github.com/user-attachments/assets/7405b455-ee34-4f1a-80cb-c43315c615d9" />
+<img width="1919" height="1079" alt="Снимок экрана 2026-06-06 152833" src="https://github.com/user-attachments/assets/0b34b7cb-ca3b-4516-b2b3-a6c6dc42d91e" />
