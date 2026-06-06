@@ -8,7 +8,6 @@
 @import url("https://so1ta.github.io/css/usp-base.css");
 
 :root {
-    /* Обязательно замени ссылку ниже на прямую ссылку твоей картинки с Ичикой */
     --background: url("https://private-user-images.githubusercontent.com/265907255/603842169-e982f765-74ea-4bcc-a0b6-188866d90df9.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODA3NDY4NjYsIm5iZiI6MTc4MDc0NjU2NiwicGF0aCI6Ii8yNjU5MDcyNTUvNjAzODQyMTY5LWU5ODJmNzY1LTc0ZWEtNGJjYy1hMGI2LTE4ODg2NmQ5MGRmOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYwNlQxMTQ5MjZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01NDZkOGU0ZTVlYzU2OTdhM2ZjY2UyNWFkM2UzODNmODM3Nzk0MTk1ZjU0NDA0MjQzYTZmYzE3ODk4MmViMjdlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.atF9EycXBYFOHzxLA0AgystOg72gL7N8mSz1FUBqDkM");
     --accentcolor: 245, 120, 135, 0.5; /* Теплый кораллово-розовый акцент под цвет сакуры и заката */
 }
