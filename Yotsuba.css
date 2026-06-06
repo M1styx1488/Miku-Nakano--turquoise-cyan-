@@ -8,7 +8,6 @@
 @import url("https://so1ta.github.io/css/usp-base.css");
 
 :root {
-    /* Обязательно замени ссылку ниже на прямую ссылку твоей картинки с Йоцубой */
     --background: url("https://private-user-images.githubusercontent.com/265907255/603842862-cda4a8b0-c31e-47b3-b8fc-28711460e8ca.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODA3NDc4MTYsIm5iZiI6MTc4MDc0NzUxNiwicGF0aCI6Ii8yNjU5MDcyNTUvNjAzODQyODYyLWNkYTRhOGIwLWMzMWUtNDdiMy1iOGZjLTI4NzExNDYwZThjYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYwNlQxMjA1MTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iOGM1OTBhMDczNzM2NjY5MWJlM2ViYmJlODg3Yjc3MDVlZDgwNGJhZmFhMTM1MzM3Zjc3ZWRlMWQ0NGVlNGYyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.8_TZHWDXL_6j6BA79BpTg0NUyzIFwGEKlVdoEp74qUs");
     --accentcolor: 250, 150, 50, 0.5; /* Золотисто-оранжевый осенний акцент */
 }
