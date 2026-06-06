@@ -8,7 +8,6 @@
 @import url("https://so1ta.github.io/css/usp-base.css");
 
 :root {
-    /* Обязательно замени ссылку ниже на прямую ссылку твоей картинки с Нино */
     --background: url("https://private-user-images.githubusercontent.com/265907255/603842123-df7b9b1c-9230-47fe-8763-ad17e5aceaf9.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODA3NDY0NjksIm5iZiI6MTc4MDc0NjE2OSwicGF0aCI6Ii8yNjU5MDcyNTUvNjAzODQyMTIzLWRmN2I5YjFjLTkyMzAtNDdmZS04NzYzLWFkMTdlNWFjZWFmOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYwNlQxMTQyNDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04NDY5ZmNjNjYzNmJiYjI3ZTE4NGU3ZTJiNjYxZDFhMmVhZDVlMDMyYzEwYzgzN2I4NGRjNzkyZDUwMDE1NTRiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.COGudGqY4-mQ9uynBDNt5OVGc7OvCxVJjjHzr3RK0ZM");
     --accentcolor: 235, 100, 150, 0.5; /* Розово-пурпурный акцент Нино */
 }
