@@ -1,15 +1,15 @@
 /**
- * @name Nino Clear Magenta
- * @description Финальная сборка со структурой в 2 полки, адаптированная под розовые/маджентовые тона Нино.
+ * @name itsuki Clear Red
+ * @description Финальная сборка со структурой в 2 полки, адаптированная под красные неоновые тона.
  * @author M1styx
- * @version 1.7.0
+ * @version 1.6.0
  */
 
 @import url("https://so1ta.github.io/css/usp-base.css");
 
 :root {
-    --background: url("https://private-user-images.githubusercontent.com/265907255/603842123-df7b9b1c-9230-47fe-8763-ad17e5aceaf9.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODA3NDY0NjksIm5iZiI6MTc4MDc0NjE2OSwicGF0aCI6Ii8yNjU5MDcyNTUvNjAzODQyMTIzLWRmN2I5YjFjLTkyMzAtNDdmZS04NzYzLWFkMTdlNWFjZWFmOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYwNlQxMTQyNDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04NDY5ZmNjNjYzNmJiYjI3ZTE4NGU3ZTJiNjYxZDFhMmVhZDVlMDMyYzEwYzgzN2I4NGRjNzkyZDUwMDE1NTRiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.COGudGqY4-mQ9uynBDNt5OVGc7OvCxVJjjHzr3RK0ZM");
-    --accentcolor: 235, 100, 150, 0.5; /* Розово-пурпурный акцент Нино */
+    --background: url("https://images3.alphacoders.com/124/thumb-1920-1242803.jpg");
+    --accentcolor: 235, 50, 75, 0.5; /* Красный акцент */
 }
 
 /* ========================================================= */
@@ -52,22 +52,22 @@
 }
 
 /* ========================================================= */
-/* ПАТЧИ ТЕМЫ (РОЗОВАЯ ПАЛИТРА НИНО)                         */
+/* ПАТЧИ ТЕМЫ (КРАСНАЯ ПАЛИТРА)                              */
 /* ========================================================= */
 
 [class*="wrapper_"]:hover > [class*="content_"],
 [class*="member_"]:hover,
 [class*="interactive_"]:hover {
-    background-color: rgba(235, 100, 150, 0.2) !important;
+    background-color: rgba(235, 50, 75, 0.2) !important;
 }
 
 [class*="mentioned_"]::before {
-    background-color: rgb(235, 100, 150) !important; 
+    background-color: rgb(235, 50, 75) !important; 
 }
 
 [class*="mention"] {
-    background: rgba(190, 70, 120, 0.45) !important;
-    color: #ffcce0 !important;
+    background: rgba(180, 35, 55, 0.45) !important;
+    color: #ffccd3 !important;
 }
 
 #app-mount::after {
@@ -75,7 +75,7 @@
     position: fixed !important;
     bottom: 5px !important; 
     right: 20px !important; 
-    color: rgba(255, 204, 224, 0.4) !important;
+    color: rgba(255, 204, 211, 0.4) !important;
     font-size: 11px !important;
     font-weight: 700 !important;
     z-index: 999999 !important;
@@ -162,7 +162,7 @@ form[class*="form_"]::after,
 }
 
 [class*="scrollableContainer_"] {
-    background-color: rgba(190, 70, 120, 0.2) !important;
+    background-color: rgba(180, 35, 55, 0.2) !important;
     border-radius: 8px !important;
     border: none !important;
 }
