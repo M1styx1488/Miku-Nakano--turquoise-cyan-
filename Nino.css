@@ -1,0 +1,236 @@
+/**
+ * @name Nino Clear Magenta
+ * @description Финальная сборка со структурой в 2 полки, адаптированная под розовые/маджентовые тона Нино.
+ * @author M1styx
+ * @version 1.7.0
+ */
+
+@import url("https://so1ta.github.io/css/usp-base.css");
+
+:root {
+    /* Обязательно замени ссылку ниже на прямую ссылку твоей картинки с Нино */
+    --background: url("https://private-user-images.githubusercontent.com/265907255/603842123-df7b9b1c-9230-47fe-8763-ad17e5aceaf9.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODA3NDY0NjksIm5iZiI6MTc4MDc0NjE2OSwicGF0aCI6Ii8yNjU5MDcyNTUvNjAzODQyMTIzLWRmN2I5YjFjLTkyMzAtNDdmZS04NzYzLWFkMTdlNWFjZWFmOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYwNlQxMTQyNDlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04NDY5ZmNjNjYzNmJiYjI3ZTE4NGU3ZTJiNjYxZDFhMmVhZDVlMDMyYzEwYzgzN2I4NGRjNzkyZDUwMDE1NTRiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.COGudGqY4-mQ9uynBDNt5OVGc7OvCxVJjjHzr3RK0ZM");
+    --accentcolor: 235, 100, 150, 0.5; /* Розово-пурпурный акцент Нино */
+}
+
+/* ========================================================= */
+/* ЖЕСТКИЙ ФИКС: ТУЛБАР ВПРАВО ДО УПОРА                      */
+/* ========================================================= */
+
+#app-mount [class*="typeWindows_"] {
+    position: absolute !important;
+    top: 0 !important;
+    width: 100% !important;
+    height: 24px !important;
+    z-index: 1000 !important;
+}
+
+#app-mount section[class*="title_"] {
+    position: relative !important;
+    margin-top: 24px !important;
+    height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    background: transparent !important;
+    /* Убиваем невидимую резервацию места под системные кнопки Дискорда */
+    padding-right: 16px !important; 
+    width: auto !important;
+}
+
+#app-mount [class*="children_"] {
+    flex: 0 1 auto !important;
+    min-width: 0 !important;
+}
+
+#app-mount section[class*="title_"] > [class*="toolbar_"] {
+    margin-left: auto !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    flex: 0 0 auto !important;
+    margin-right: 0 !important; /* Убираем остаточные отступы */
+    padding-right: 0 !important;
+}
+
+/* ========================================================= */
+/* ПАТЧИ ТЕМЫ (РОЗОВАЯ ПАЛИТРА НИНО)                         */
+/* ========================================================= */
+
+[class*="wrapper_"]:hover > [class*="content_"],
+[class*="member_"]:hover,
+[class*="interactive_"]:hover {
+    background-color: rgba(235, 100, 150, 0.2) !important;
+}
+
+[class*="mentioned_"]::before {
+    background-color: rgb(235, 100, 150) !important; 
+}
+
+[class*="mention"] {
+    background: rgba(190, 70, 120, 0.45) !important;
+    color: #ffcce0 !important;
+}
+
+#app-mount::after {
+    content: "Theme by M1styx" !important;
+    position: fixed !important;
+    bottom: 5px !important; 
+    right: 20px !important; 
+    color: rgba(255, 204, 224, 0.4) !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    z-index: 999999 !important;
+    pointer-events: none !important;
+}
+
+/* ========================================================= */
+/* ФИКС СТРОКИ ВВОДА И ПОЛНЫЙ ЭКСТЕРМИНАТУС ТЕНЕЙ            */
+/* ========================================================= */
+
+form[class*="form_"]::before,
+form[class*="form_"]::after,
+[class*="form_"]::before,
+[class*="form_"]::after,
+[class*="channelBottomBarArea_"]::before,
+[class*="channelBottomBarArea_"]::after,
+[class*="stackedBars_"]::before,
+[class*="stackedBars_"]::after,
+[class*="chatContent_"]::before,
+[class*="chatContent_"]::after,
+[class*="messagesWrapper_"]::before,
+[class*="messagesWrapper_"]::after {
+    content: none !important;
+    display: none !important;
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+[class*="form_"],
+[class*="stackedBars_"],
+[class*="channelBottomBarArea_"] {
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+[class*="typing_"]::before,
+[class*="typing_"]::after,
+[class*="base_"]::before,
+[class*="base_"]::after {
+    content: none !important;
+    display: none !important;
+}
+
+[class*="typing_"] {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+[class*="base_"] {
+    box-shadow: none !important; 
+}
+
+[class*="cooldownWrapper_"] {
+    display: none !important;
+}
+
+[class*="chat_"]::before,
+[class*="chat_"]::after,
+[class*="scroller_"]::before,
+[class*="scroller_"]::after {
+    display: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+[class*="sidebar_"],
+[class*="membersWrap_"],
+[class*="members_"] {
+    box-shadow: none !important;
+}
+
+[class*="chatContent_"] [class*="form_"] {
+    padding: 0 16px 16px !important; 
+    margin-top: 0 !important; 
+    display: flex !important;
+    flex-direction: column !important;
+    z-index: 1 !important; 
+}
+
+[class*="scrollerSpacer_"] {
+    height: 8px !important; 
+}
+
+[class*="scrollableContainer_"] {
+    background-color: rgba(190, 70, 120, 0.2) !important;
+    border-radius: 8px !important;
+    border: none !important;
+}
+
+[class*="attachWrapper_"] {
+    display: flex !important;
+    align-items: center !important;
+    height: auto !important;
+}
+
+[class*="attachButton_"] {
+    padding: 0 12px !important; 
+    margin: 0 !important;
+    background: transparent !important; 
+    box-shadow: none !important; 
+    border: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: auto !important; 
+}
+
+[class*="attachButtonInner_"] {
+    background: transparent !important;
+}
+
+[class*="inner_"] {
+    display: flex !important;
+    align-items: center !important;
+    padding-top: 4px !important; 
+    padding-bottom: 4px !important; 
+    width: 100% !important; 
+    min-height: 38px !important; 
+}
+
+[class*="textArea_"] {
+    margin-top: 0 !important; 
+}
+
+[class*="buttons_"] {
+    display: flex !important;
+    align-items: center !important;
+    margin-right: 8px !important;
+    height: auto !important;
+}
+
+/* ========================================================= */
+/* БРОНЕБОЙНОЕ УНИЧТОЖЕНИЕ МИНИПРОФИЛЯ СПРАВА (ЛС И СЕРВЕРА) */
+/* ========================================================= */
+
+[class*="chatContent_"] ~ aside,
+[class*="chatContent_"] ~ [class*="profilePanel_"],
+[class*="chatContent_"] ~ [class*="userProfileOuter_"],
+[class*="chat_"] > [class*="profilePanel_"] {
+    display: none !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    max-width: 0 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    z-index: -9999 !important;
+}
+
+[class*="chatContent_"] {
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
