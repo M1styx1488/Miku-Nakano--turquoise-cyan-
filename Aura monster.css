@@ -8,7 +8,6 @@
 @import url("https://so1ta.github.io/css/usp-base.css");
 
 :root {
-    /* Обязательно замени ссылку ниже на прямую ссылку твоей картинки с Субару */
     --background: url("https://external-preview.redd.it/5lB5iknPtqHiDI7Cvt_dm_GlWRkx6cQ2v12l8EJlERQ.gif?auto=webp&s=6a2ff30a6c1ddd9a063556b0f81f7c90fcac328b");
     --accentcolor: 50, 220, 100, 0.5; /* Токсично-неоновый зеленый акцент */
 }
